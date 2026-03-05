@@ -250,7 +250,8 @@ in Robotic Lift-and-Place Tasks</h1>
                 <!-- <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Anonymous IROS Submission</a><sup>*</sup>,</span> -->
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Anonymous IROS Submission</a>
+                    <strong>Anonymous IROS Submission</strong>
+                    <!-- <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Anonymous IROS Submission</a> -->
                   </span>
                   </div>
 
@@ -320,13 +321,18 @@ in Robotic Lift-and-Place Tasks</h1>
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+      <div style="width: 100%; max-width: 100%; margin: 0 auto;">
+        <iframe 
+          src="https://www.youtube.com/embed/XfcC0PPnrP8?autoplay=1&mute=1&loop=1&playlist=XfcC0PPnrP8"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          style="width:100%; aspect-ratio:16/9; border-radius:16px;">
+        </iframe>
+      </div>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+       We present PREFAIL, a proactive failure prediction framework for non-prehensile lift-and-place tasks that analyzes relative object–carrier motion and identifies the latest intervention time for actionable failure detection.
       </h2>
     </div>
   </div>
@@ -342,7 +348,8 @@ in Robotic Lift-and-Place Tasks</h1>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Non-prehensile manipulation enables flexible material handling with part  carriers, but friction-based support makes high-speed motions failure-prone, while slower operation increases cycle time. Proactive failure prediction is therefore essential for efficient and reliable performance, yet existing approaches remain limited by key constraints, including sensitivity to dynamic actions and high dependence on known policy structures. Furthermore, existing methods and datasets lack a precise characterization of the latest intervention time, leaving it unclear whether a detected failure can still be prevented through timely intervention. 
+In this paper, we investigate lift-and-place tasks for non-prehensile material handling manipulation and propose a more effective approach to predicting precursors to failures (PREFAIL) by analyzing the relative motion of target objects with respect to the carrier. We further introduce a dataset that precisely identifies the latest intervention time for risky manipulations, enabling rigorous evaluation of whether a failure prediction is actionable. We validate our approach on both simulation and real-world datasets. Our experimental results demonstrate that PREFAIL substantially improves both the accuracy and timeliness of responses to failure precursors.
           </p>
         </div>
       </div>
@@ -353,34 +360,29 @@ in Robotic Lift-and-Place Tasks</h1>
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- TODO: Replace with your research result images -->
         <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -389,30 +391,28 @@ in Robotic Lift-and-Place Tasks</h1>
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
@@ -420,7 +420,7 @@ in Robotic Lift-and-Place Tasks</h1>
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Some rollouts</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <!-- TODO: Add poster image for better preview -->
@@ -455,10 +455,10 @@ in Robotic Lift-and-Place Tasks</h1>
 
 
 <!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Supplementary Material</h2>
 
       
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
@@ -466,7 +466,7 @@ in Robotic Lift-and-Place Tasks</h1>
         
       </div>
     </div>
-  </section> -->
+  </section>
 <!--End paper poster -->
 
 
